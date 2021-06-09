@@ -10,7 +10,7 @@ img {
 header {
   position: sticky;
   top: 0;
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
   gap: 20px;
   box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
   background-color: rgb(219, 219, 219);
@@ -26,14 +26,17 @@ header .logo {
 }
 
 header nav ul {
-  display: flex;
   justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 1.5rem;
-  gap: 60px;
+  gap: 80px;
   overflow-x: auto;
+}
+
+li {
+  padding: 5px;
 }
 
 a {
@@ -47,7 +50,12 @@ a:hover {
   color: rgb(155, 155, 155);
 }
 
-#first_section {
+/*Til header start*/
+#first_section,
+#om_mig,
+#web_tema,
+#ux_tema,
+#animation_tema {
   width: 100%;
   background-image: url(/billeder/solnedgang.webp);
   background-size: cover;
@@ -57,7 +65,11 @@ a:hover {
   grid-template-rows: repeat(4, 1fr);
 }
 
-#first_section h1 {
+#first_section h1,
+#om_mig h1,
+#web_tema h1,
+#ux_tema h1,
+#animation_tema h1 {
   text-align: center;
   padding-top: 40px;
   font-size: 2rem;
@@ -67,6 +79,16 @@ a:hover {
   text-align: center;
   padding-top: 10px;
   font-size: 1.5rem;
+}
+/*Til header slut*/
+
+#second_section,
+#third_section,
+#fourth_section,
+#fifth_section {
+  border: 3px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 h1,
@@ -80,6 +102,27 @@ p {
   line-height: 1.5rem;
 }
 
+h2 {
+  text-align: center;
+}
+
+#hjem,
+#om,
+#web,
+#ux,
+#animation {
+  padding: 30px;
+}
+
+/*Footer start*/
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: rgb(219, 219, 219);
+  color: white;
+}
+/*Footer slut*/
+
 /*Burgermenu start*/
 .hidden {
   /*    display: none;*/
@@ -90,6 +133,7 @@ p {
 
 #menuknap {
   display: inline-block;
+  font-size: xx-large;
 }
 
 #menu {
@@ -116,9 +160,89 @@ p {
 
 /*Media queries start*/
 
-@media (min-width: 1000px) {
-  main {
+@media (min-width: 600px) {
+  header nav ul {
+    display: flex;
+    gap: 50px;
+  }
+
+  .galleri {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .galleri img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  #hjem {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px;
+  }
+  header nav ul {
+    display: flex;
+  }
+
+  #second_section .section_wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #third_section .section_wrapper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #fourth_section .section_wrapper4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #fifth_section .section_wrapper5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #second_section,
+  #third_section,
+  #fourth_section,
+  #fifth_section {
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  #second_section,
+  #third_section,
+  #fourth_section,
+  #fifth_section,
+  .section_wrapper2,
+  .section_wrapper3,
+  .section_wrapper4,
+  .section_wrapper5 {
+    padding: 10px;
+  }
+
+  .section_wrapper2 div,
+  .section_wrapper3 div,
+  .section_wrapper4 div,
+  .section_wrapper5 div {
+    padding-right: 10px;
+  }
+
+  .galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .galleri img {
+    height: 100%;
+    object-fit: cover;
   }
 }
