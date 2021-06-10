@@ -17,12 +17,12 @@ header {
 }
 
 header .logo img {
-  width: 4rem;
+  width: 6rem;
 }
 
 header .logo {
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 header nav ul {
@@ -55,7 +55,8 @@ a:hover {
 #om_mig,
 #web_tema,
 #ux_tema,
-#animation_tema {
+#animation_tema,
+#indhold_tema {
   width: 100%;
   background-image: url(/billeder/solnedgang.webp);
   background-size: cover;
@@ -69,7 +70,8 @@ a:hover {
 #om_mig h1,
 #web_tema h1,
 #ux_tema h1,
-#animation_tema h1 {
+#animation_tema h1,
+#indhold_tema h1 {
   text-align: center;
   padding-top: 40px;
   font-size: 2rem;
@@ -102,7 +104,7 @@ p {
   line-height: 1.5rem;
 }
 
-h2 {
+#om h2 {
   text-align: center;
 }
 
@@ -110,7 +112,8 @@ h2 {
 #om,
 #web,
 #ux,
-#animation {
+#animation,
+#indhold {
   padding: 30px;
 }
 
@@ -244,5 +247,10 @@ footer {
   .galleri img {
     height: 100%;
     object-fit: cover;
+  }
+
+  #indhold {
+    display: grid;
+    grid-template-columns: 1fr fr;
   }
 }
