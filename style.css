@@ -114,8 +114,20 @@ p {
   line-height: 1.5rem;
 }
 
+figcaption {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  font-style: italic;
+}
+
 #om h2 {
   text-align: center;
+}
+
+#ux_tema h1 {
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 #hjem,
@@ -192,9 +204,17 @@ footer {
 }
 
 @media (min-width: 1000px) {
-  #hjem {
+  #hjem,
+  #om,
+  #web,
+  #ux,
+  #animation {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 30px;
+  }
+
+  #indhold {
     margin: 30px;
   }
   header nav ul {
@@ -259,8 +279,23 @@ footer {
     object-fit: cover;
   }
 
+  .emilie img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+  }
+
   #indhold {
     display: grid;
-    grid-template-columns: 1fr fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #indhold img {
+    width: 100%;
+    height: 400px;
+    padding-left: 10px;
   }
 }
