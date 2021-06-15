@@ -59,7 +59,7 @@ a:hover {
   width: 100%;
   background-image: url(./billeder/headerbillede.webp);
   background-size: cover;
-  background-position: 30% 20%;
+  background-position: 30% 40%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
