@@ -57,12 +57,12 @@ a:hover {
 #animation_tema,
 #indhold_tema {
   width: 100%;
-  background-image: url(/billeder/solnedgang.webp);
+  background-image: url(./billeder/headerbillede.webp);
   background-size: cover;
-  background-position: 25% 10%;
+  background-position: 30% 20%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 #first_section h1,
@@ -78,7 +78,7 @@ a:hover {
 
 #first_section p {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
   font-size: 1.5rem;
 }
 /*Til header slut*/
