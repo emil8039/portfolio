@@ -74,12 +74,14 @@ a:hover {
   text-align: center;
   padding-top: 40px;
   font-size: 2rem;
+  color: white;
 }
 
 #first_section p {
   text-align: center;
   padding-top: 0px;
   font-size: 1.5rem;
+  color: white;
 }
 /*Til header slut*/
 
